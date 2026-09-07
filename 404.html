@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Wastly AI</title>
+  <script>
+    var path = location.pathname || "/";
+    var base = "";
+    if (path.indexOf("/wastly-ai") === 0) {
+      base = "/wastly-ai";
+      path = path.slice(base.length);
+    }
+    if (!path) path = "/";
+    location.replace(base + "/#" + path + location.search);
+  </script>
+</head>
+<body>
+  <p><a href="./">Open Wastly AI</a></p>
+</body>
+</html>
